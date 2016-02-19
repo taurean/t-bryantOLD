@@ -1,0 +1,35 @@
+// Z-index Component
+// =================
+//
+// For more info on how this works, see the excellent article by Jackie Balzer:
+// http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
+
+// Z function:
+@function z($list, $element) {
+
+  $z-index: index($list, $element);
+
+  @if $z-index {
+    @return $z-index;
+  }
+
+  @warn 'There is no item "#{$element}" in this list; choose one of: #{$list}';
+  @return null;
+}
+
+// Usage:
+//
+// .modal {
+//   z-index: z($ui-elements, modals);
+// }
+$ui-elements: page,
+              panels,
+              tab-bars,
+              toolbars,
+              navigation,
+              popovers,
+              dropdowns,
+              dropdowns-2, // level 2 (sub-menu)
+              dropdowns-3, // level 3 (sub-sub-menu)
+              tooltips,
+              modals;

@@ -1,0 +1,39 @@
+$pro-hue: (
+    white: #ffffff,
+    black: #151515,
+
+    brand-color-one: $brand-color-one,
+    brand-color-two: $brand-color-two,
+    brand-color-three: $brand-color-three,
+    brand-color-four: $brand-color-four,
+    brand-color-five: $brand-color-five,
+    brand-color-six: $brand-color-six,
+
+    red: $red-base,
+    orange: $orange-base,
+    yellow: $yellow-base,
+    green: $green-base,
+    blue: $blue-base,
+    indigo: $indigo-base,
+    violet: $violet-base,
+
+    focus: $focus-base,
+    info: $info-base,
+    alert: $alert-base,
+    warning: $warning-base,
+    danger: $danger-base,
+    success: $success-base,
+) !default;
+
+$pro-grayscale: (
+    1: #171717,
+    2: #2e2e2e,
+    3: #454545,
+    4: #5c5c5c,
+    5: #737373,
+    6: #8a8a8a,
+    7: #a1a1a1,
+    8: #b8b8b8,
+    9: #cfcfcf,
+   10: #e8e8e8,
+) !default;

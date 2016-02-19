@@ -1,0 +1,19 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: $em-base;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $typestack-text;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}

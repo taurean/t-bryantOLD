@@ -1,0 +1,112 @@
+// Type Scale
+$em-base:                  10px;
+$font-size-base:            rem(14px);
+$font-size-h1:              rem(28px);
+$font-size-h2:              rem(22px);
+$font-size-h3:              rem(18px);
+$font-size-h4:              rem(14px);
+$font-size-h5:              rem(12px);
+$font-size-h6:              rem(10px);
+
+$line-height-base:          1.4;
+$line-height-heading:       1.2;
+$line-height-ui:            1;
+
+$font-light:                300;
+$font-normal:               400;
+$font-bold:                 500;
+
+// Type Definitions 
+$typestack-display:         "Helvetica Neue",Helvetica,Arial,sans-serif;
+$typestack-text:            Georgia,Times,"Times New Roman",serif;
+$typestack-ui:              Arial,"Helvetica Neue",Helvetica,sans-serif;
+
+// Timing
+$timing-transitions:       125ms;
+$timing-transition-delay:  400ms;
+$timing-tooltips:          100ms;
+
+// color
+$pro-hue-base-start:   #0E1430;
+$pro-hue-base-end:     #F5EAE1;
+
+$brand-color-one:       #0D485C;
+$brand-color-two:       #E57273;
+$brand-color-three:     $brand-color-one;
+$brand-color-four:      $brand-color-one;
+$brand-color-five:      $brand-color-one;
+$brand-color-six:       $brand-color-one;
+
+$red-base:              #DA1515;
+$blue-base:             #0E60D3;
+$yellow-base:           #FAA819;
+
+
+$orange-base:           mix($red-base, $yellow-base, 50%);
+$green-base:            adjust-hue(darken(saturate(mix($yellow-base, $blue-base, 48%), 50%), 10%), 40);
+$purple-base:           mix($red-base, $blue-base, 50%);
+$indigo-base:           mix($blue-base, $purple-base, 38%);
+$violet-base:           mix($red-base, $purple-base, 50%);
+
+$focus-base:            $blue-base;
+$info-base:             $blue-base;
+$alert-base:            $yellow-base;
+$warning-base:          $orange-base;
+$danger-base:           $red-base;
+$success-base:          $green-base;
+
+$gray-base:             #B9B9BD;
+
+
+
+
+//
+//
+//      OLD COLORS — no longer use
+//
+//
+//
+// Color
+$color-primary:              #016366;
+$color-primary-darker:       #044d4f;
+$color-primary-darkest:      #043132;
+$color-primary-light:        #3d8183;
+$color-primary-lightest:     #ccede9;
+$color-primary-tint:         #f3fafa;
+
+$color-focus:                #16a5e7;
+$color-toggle:               #016ad1;
+
+$color-link:                 #053673;
+$color-link-focus:           $color-focus;
+$color-link-hover:           #0162a8;
+$color-link-active:          #031f4c;
+
+$color-info:                 #3398db;
+$color-info-tint:            #d8e6f3;
+$color-info-dark:            #2a7fb9;
+
+$color-alert:                #a76907;
+$color-alert-tint:           #fcf6de;
+$color-alert-dark:           darken($color-alert, 16%);
+
+$color-warning:              #AA422F;
+$color-warning-tint:         #ffebeb;
+$color-warning-dark:         darken($color-warning, 16%);
+
+$color-success:              #21853c;
+$color-success-tint:         #e5fbee;
+$color-success-dark:         #27ae60;
+
+$color-white:                #fff;
+$color-bright:               #f5f7fa;
+$color-gray-100:             #e6e9ed;
+$color-gray-200:             #ccd1d9;
+$color-gray-300:             #aab2be;
+$color-gray-400:             #656d78;
+$color-gray-500:             #434a54;
+$color-gray-600:             #263140;
+$color-gray-700:             #142133;
+$color-gray-800:             #081426;
+$color-gray-900:             #030c1a;
+$color-black:                #00050f;

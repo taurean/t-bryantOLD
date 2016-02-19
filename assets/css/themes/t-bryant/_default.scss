@@ -1,0 +1,32 @@
+// Type Scale
+$font-size-base:            rem(14px);
+$font-size-h1:              rem(60px);
+$font-size-h2:              rem(36px);
+$font-size-h3:              rem(23px);
+$font-size-h4:              rem(14px);
+$font-size-h5:              rem(10px);
+$font-size-h6:              rem(8px);
+
+$line-height-base:          1.4;
+$line-height-heading:       1.2;
+$line-height-ui:            1;
+
+$font-light:                300;
+$font-normal:               400;
+$font-bold:                 500;
+
+// Typography
+$typestack-display:         "Operator A", "Operator B", "Helvetica Neue",Helvetica,Arial,sans-serif;
+$typestack-text:            "Hoefler Text A", "Hoefler Text B", Georgia,Times,"Times New Roman",serif;
+$typestack-ui:              "Operator A", "Operator B", "Helvetica Neue",Helvetica,sans-serif;
+
+// Color
+$pro-hue-base-start:   #0e1430;
+$pro-hue-base-end:     #f5eae1;
+
+$brand-color-one:       #0d485c;
+$brand-color-two:       #e57273;
+$brand-color-three:     $brand-color-one;
+$brand-color-four:      $brand-color-one;
+$brand-color-five:      $brand-color-one;
+$brand-color-six:       $brand-color-one;

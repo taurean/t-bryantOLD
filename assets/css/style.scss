@@ -1,0 +1,57 @@
+@import 'all';
+
+// Site Wide
+
+body {
+  background: color(black);
+}
+
+// Navigation
+.ui-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+  }
+}
+
+
+
+.nav-list {
+  display: block;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  &-item {
+    vertical-align: top;
+    padding: .6rem 1.2rem;
+    margin: 0 .6rem;
+  }
+
+  &-link {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+
+    // &:focus {
+    //
+    // }
+    &:hover {
+      color: color(brand-color-one);
+    }
+    &:active {
+      color: color(brand-color-one, -3);
+    }
+  }
+}
+
+
+.site-header {
+  font-size: $font-size-h2;
+  line-height: $font-size-h5;
+  font-style: normal !important;
+  text-transform: uppercase;
+}
