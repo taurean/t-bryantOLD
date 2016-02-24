@@ -44,4 +44,8 @@ article {
     font-size: $font-size-h3;
     color: color(brand-color-one, -3);
   }
+
+  p:last-of-type {
+    margin-bottom: 2rem;
+  }
 }
