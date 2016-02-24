@@ -4,6 +4,8 @@
 
 body {
   background: color(black);
+  color: color(white);
+  font-family: $typestack-text;
 }
 
 // Navigation
@@ -28,6 +30,7 @@ body {
   &-item {
     vertical-align: top;
     padding: .6rem 1.2rem;
+    font-family: $typestack-display;
     margin: 0 .6rem;
   }
 
@@ -46,6 +49,13 @@ body {
       color: color(brand-color-one, -3);
     }
   }
+}
+
+article {
+  font-size: $font-size-base;
+  display: block;
+  letter-spacing: .15ex;
+  line-height: $line-height-base;
 }
 
 

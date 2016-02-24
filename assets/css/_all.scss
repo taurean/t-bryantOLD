@@ -1,6 +1,12 @@
 // Vendor
 @import 'vendor/normalize';
 
+// Variable Layer - Do Not Touch
+@import 'themes/default';
+
+// t-bryant themes
+@import 'themes/t-bryant/default';
+
 // Tools
 @import 'tools/mixins';
 @import 'tools/functions';
@@ -8,12 +14,6 @@
 @import 'tools/sr-only';
 @import 'tools/grid';
 @import 'tools/z-index';
-
-// Variable Layer - Do Not Touch
-@import 'themes/default';
-
-// t-bryant themes
-@import 'themes/t-bryant/default';
 
 // Maps
 @import 'tools/maps/color-map';
