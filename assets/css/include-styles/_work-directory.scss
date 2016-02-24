@@ -55,4 +55,10 @@
       background-color: color(brand-color-one);
     }
   }
+
+  &-thumb:active {
+    .label {
+      background-color: color(brand-color-one, -2);
+    }
+  }
 }
