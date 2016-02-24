@@ -1,0 +1,58 @@
+// Navigation
+.ui-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.main-site-nav {
+  display: flex;
+}
+
+.nav-list {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  max-width: 96rem;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  &-item {
+    display: block;
+    vertical-align: top;
+    font-family: $typestack-text;
+    font-weight: $font-bold;
+    // margin: 0 1.2rem;
+  }
+
+  &-link {
+    color: color(black);
+    display: block;
+    padding: .6rem 1.2rem;
+    font-style: italic;
+    text-decoration: none;
+
+    // &:focus {
+    //
+    // }
+    &:hover {
+      color: color(brand-color-one);
+    }
+    &:active {
+      color: color(brand-color-one, -3);
+    }
+  }
+}
+
+.site-header {
+  font-size: $font-size-h2;
+  line-height: $font-size-h3;
+  font-style: normal;
+  text-transform: uppercase;
+}

@@ -1,0 +1,47 @@
+.essay {
+  display: flex;
+}
+article {
+  font-size: $font-size-base;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: $line-height-base;
+
+  h1 {
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    max-width: 60rem;
+    font-size: $font-size-h3;
+    margin: 6rem 0 3rem;
+  }
+
+  p {
+    display: block;
+    font-size: 1.8rem;
+    line-height: $line-height-base;
+    max-width: 60rem;
+    width: 100%;
+
+    a,
+    a:visited {
+      text-decoration-style: wavy;
+      color: color(brand-color-one);
+    }
+
+    a:focus,
+    a:hover {
+      color: color(brand-color-one, 2);
+    }
+
+    a:active {
+      color: color(brand-color-one, -1);
+    }
+  }
+
+  p:first-of-type {
+    font-size: $font-size-h3;
+    color: color(brand-color-one, -3);
+  }
+}
