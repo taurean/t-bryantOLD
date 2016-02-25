@@ -50,7 +50,7 @@
   }
 
   &-thumb:hover,
-  &-thumb:focus {
+  .work-list-thumb:focus {
     .label {
       background-color: color(brand-color-one);
     }
