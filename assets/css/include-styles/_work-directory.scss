@@ -4,7 +4,7 @@
 
 .work-list {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 0;
 
@@ -14,14 +14,14 @@
   &-thumb {
     display: inline-block;
     width: 100%;
-    max-width: 48rem;
+    max-width: 58rem;
     padding: 0;
     margin-right: -4px;
     margin-bottom: 2rem;
 
     .label {
       width: 100%;
-      text-align: right;
+      // text-align: right;
       padding: 1rem;
       background-color: color(black);
       font-family: $typestack-ui;
@@ -45,17 +45,21 @@
   .work-list-thumb:nth-child(odd):last-child {
     max-width: 100%;
   }
+}
 
-  &-thumb:hover,
-  .work-list-thumb:focus {
-    .label {
-      background-color: color(brand-color-one);
-    }
+.dark-ui .label {
+  background-color: color(red,-8);
+}
+
+.dark-ui:hover,
+.dark-ui:focus {
+  .label {
+    background-color: color(red, -6);
   }
+}
 
-  &-thumb:active {
-    .label {
-      background-color: color(brand-color-one, -2);
-    }
+.dark-ui:active {
+  .label {
+    background-color: color(red, -9);
   }
 }

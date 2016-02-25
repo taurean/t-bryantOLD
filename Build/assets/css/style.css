@@ -664,7 +664,7 @@ article {
 
 .work-list {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 0; }
   .work-list a {
@@ -672,13 +672,12 @@ article {
   .work-list-thumb {
     display: inline-block;
     width: 100%;
-    max-width: 48rem;
+    max-width: 58rem;
     padding: 0;
     margin-right: -4px;
     margin-bottom: 2rem; }
     .work-list-thumb .label {
       width: 100%;
-      text-align: right;
       padding: 1rem;
       background-color: #151515;
       font-family: "tenso", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -694,11 +693,16 @@ article {
       margin-right: 3.7rem; }
   .work-list .work-list-thumb:nth-child(odd):last-child {
     max-width: 100%; }
-  .work-list-thumb:hover .label,
-  .work-list .work-list-thumb:focus .label {
-    background-color: #2772db; }
-  .work-list-thumb:active .label {
-    background-color: #225fb9; }
+
+.dark-ui .label {
+  background-color: #4b1428; }
+
+.dark-ui:hover .label,
+.dark-ui:focus .label {
+  background-color: #601425; }
+
+.dark-ui:active .label {
+  background-color: #411429; }
 
 body {
   background: white;
