@@ -23,7 +23,7 @@
       width: 100%;
       // text-align: right;
       padding: 1rem;
-      background-color: color(black);
+      background-color: color(black, 7);
       font-family: $typestack-ui;
       color: color(white);
       margin-bottom: -.1rem;
@@ -45,21 +45,17 @@
   .work-list-thumb:nth-child(odd):last-child {
     max-width: 100%;
   }
-}
 
-.dark-ui .label {
-  background-color: color(red,-8);
-}
-
-.dark-ui:hover,
-.dark-ui:focus {
-  .label {
-    background-color: color(red, -6);
+  .work-list-thumb:hover,
+  .work-list-thumb:focus {
+    .label {
+      background-color: color(brand-color-one);
+    }
   }
-}
 
-.dark-ui:active {
-  .label {
-    background-color: color(red, -9);
+  .work-list-thumb:active {
+    .label {
+      background-color: color(brand-color-one, -2);
+    }
   }
 }

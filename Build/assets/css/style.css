@@ -679,7 +679,7 @@ article {
     .work-list-thumb .label {
       width: 100%;
       padding: 1rem;
-      background-color: #151515;
+      background-color: #a79f9a;
       font-family: "tenso", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: white;
       margin-bottom: -.1rem;
@@ -693,16 +693,11 @@ article {
       margin-right: 3.7rem; }
   .work-list .work-list-thumb:nth-child(odd):last-child {
     max-width: 100%; }
-
-.dark-ui .label {
-  background-color: #4b1428; }
-
-.dark-ui:hover .label,
-.dark-ui:focus .label {
-  background-color: #601425; }
-
-.dark-ui:active .label {
-  background-color: #411429; }
+  .work-list .work-list-thumb:hover .label,
+  .work-list .work-list-thumb:focus .label {
+    background-color: #2772db; }
+  .work-list .work-list-thumb:active .label {
+    background-color: #225fb9; }
 
 body {
   background: white;
