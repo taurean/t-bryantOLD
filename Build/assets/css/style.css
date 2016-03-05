@@ -461,12 +461,12 @@ body {
   padding: 0; }
 
 body {
-  font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+  font-family: "Mercury SSm A", "Mercury SSm B", cursive, Georgia, Times, "Times New Roman", serif;
   font-size: 1.6rem;
   line-height: 1.4; }
 
 body {
-  font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif; }
+  font-family: "Mercury SSm A", "Mercury SSm B", cursive, Georgia, Times, "Times New Roman", serif; }
 
 h1,
 h2,
@@ -475,7 +475,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Whitney A", "Whitney B", cursive, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1 {
   font-size: 4.8rem; }
@@ -603,8 +603,8 @@ address {
   .nav-list-item {
     display: block;
     vertical-align: top;
-    font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
-    font-weight: 500; }
+    font-family: "Mercury SSm A", "Mercury SSm B", cursive, Georgia, Times, "Times New Roman", serif;
+    font-weight: 700; }
   .nav-list-link {
     color: #151515;
     display: block;
@@ -680,7 +680,7 @@ article {
       width: 100%;
       padding: 1rem;
       background-color: #a79f9a;
-      font-family: "tenso", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Whitney A", "Whitney B", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: white;
       margin-bottom: -.1rem;
       border-radius: .3rem .3rem 0 0;
@@ -702,4 +702,4 @@ article {
 body {
   background: white;
   color: #151515;
-  font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif; }
+  font-family: "Mercury SSm A", "Mercury SSm B", cursive, Georgia, Times, "Times New Roman", serif; }
