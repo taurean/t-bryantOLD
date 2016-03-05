@@ -587,7 +587,7 @@ address {
   width: 100%; }
 
 .main-site-nav {
-  background: #151515;
+  background: #09090b;
   display: flex;
   margin: 0 auto;
   max-width: 96rem; }
@@ -608,7 +608,7 @@ address {
   letter-spacing: .25ex;
   margin: 2rem 0; }
 .nav-list-link {
-  color: white;
+  color: #a4a4a6;
   display: block;
   padding: .6rem 1.2rem;
   text-decoration: none; }
@@ -618,13 +618,21 @@ address {
     color: #0420c1; }
 
 .site-header {
-  color: #707072;
+  color: #a4a4a6;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: color .25s ease, opacity .25s ease; }
   .site-header span {
-    color: rgba(255, 255, 255, 0.4); }
+    opacity: 0.5; }
+  .site-header:hover, .site-header:focus {
+    color: white;
+    transition: color .125s ease; }
+    .site-header:hover span, .site-header:focus span {
+      opacity: 1; }
+  .site-header:active {
+    color: #bdbdbf; }
 
 .essay {
   display: flex; }
