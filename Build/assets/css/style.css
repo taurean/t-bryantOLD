@@ -582,7 +582,7 @@ address {
   margin-bottom: .5rem; }
 
 .nav-wrapper {
-  background: #2b2a29;
+  background: #232325;
   display: block;
   width: 100%; }
 
@@ -613,12 +613,12 @@ address {
   padding: .6rem 1.2rem;
   text-decoration: none; }
   .nav-list-link:hover {
-    color: #2772db; }
+    color: #0025ff; }
   .nav-list-link:active {
-    color: #2056a8; }
+    color: #0420c1; }
 
 .site-header {
-  color: rgba(255, 255, 255, 0.8);
+  color: #707072;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -651,15 +651,15 @@ article {
     article p a,
     article p a:visited {
       text-decoration-style: wavy;
-      color: #2772db; }
+      color: #0025ff; }
     article p a:focus,
     article p a:hover {
-      color: #508adc; }
+      color: #314cf9; }
     article p a:active {
-      color: #2569ca; }
+      color: #0123ea; }
   article p:first-of-type {
     font-size: 2.4rem;
-    color: #2056a8; }
+    color: #0420c1; }
   article p:last-of-type {
     margin-bottom: 2rem; }
 
@@ -699,9 +699,9 @@ article {
     max-width: 100%; }
   .work-list .work-list-thumb:hover .label,
   .work-list .work-list-thumb:focus .label {
-    background-color: #2772db; }
+    background-color: #0025ff; }
   .work-list .work-list-thumb:active .label {
-    background-color: #225fb9; }
+    background-color: #0322d6; }
 
 body {
   background: white;

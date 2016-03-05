@@ -1,5 +1,5 @@
 .nav-wrapper {
-  background: color(black, 1);
+  background: grayscale(1);
   display: block;
   width: 100%;
 }
@@ -52,7 +52,7 @@
 }
 
 .site-header {
-  color: color(white, 0, .8);
+  color: grayscale(5);
   font-size: $font-size-h4;
   font-style: normal;
   font-weight: $font-normal;
