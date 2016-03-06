@@ -12,6 +12,10 @@
   .site-header {
     font-size: $font-size-h3;
   }
+
+  article h1 {
+    font-size: $font-size-h1;
+  }
 }
 
 @media only screen and (max-width : 1024px) {

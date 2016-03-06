@@ -2,8 +2,13 @@
 
 // Site Wide
 
+*,
+*:before {
+  box-sizing: border-box;
+}
+
 body {
-  background: color(white);
-  color: color(black);
+  background: grayscale(9);
+  color: grayscale(2);
   font-family: $typestack-text;
 }
