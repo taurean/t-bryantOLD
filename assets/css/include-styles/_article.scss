@@ -70,6 +70,11 @@ article {
   }
 
   p:last-of-type {
-    margin-bottom: 20rem;
+    font-family: $typestack-display;
+    border-top: .1rem solid grayscale(9);
+    padding: 1rem 0;
+    font-size: $font-size-h5;
+    margin: 2rem auto 20rem;
+    color: grayscale(6);
   }
 }
