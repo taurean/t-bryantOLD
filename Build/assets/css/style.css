@@ -590,7 +590,7 @@ address {
   background: #09090b;
   display: flex;
   margin: 0 auto;
-  max-width: 96rem; }
+  max-width: 120rem; }
 
 .ui-list {
   list-style-type: none;
@@ -599,33 +599,43 @@ address {
   .ui-list li {
     display: inline-block; }
 
-.nav-list-item {
-  display: block;
-  vertical-align: top;
-  font-family: "Whitney A", "Whitney B", cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: .25ex;
-  margin: 2rem 0; }
-.nav-list-link {
-  color: #a4a4a6;
-  display: block;
-  padding: .6rem 1.2rem;
-  text-decoration: none; }
-  .nav-list-link:hover {
-    color: #0025ff; }
-  .nav-list-link:active {
-    color: #0420c1; }
+.nav-list {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0 2rem; }
+  .nav-list-item {
+    vertical-align: top;
+    font-family: "Whitney A", "Whitney B", cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .25ex;
+    margin: 2rem 0;
+    text-align: center;
+    flex: 1 1 4rem; }
+    .nav-list-item:first-of-type {
+      flex: 4 4;
+      text-align: left; }
+  .nav-list-link {
+    color: #a4a4a6;
+    display: block;
+    padding: .6rem 1.2rem;
+    text-decoration: none; }
+    .nav-list-link:hover {
+      color: #7b88f0; }
+    .nav-list-link:active {
+      color: #4a60f6; }
 
 .site-header {
-  color: #a4a4a6;
+  color: #bdbdbf;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   transition: color .25s ease, opacity .25s ease; }
   .site-header span {
-    opacity: 0.5; }
+    opacity: 0.7; }
   .site-header:hover, .site-header:focus {
     color: white;
     transition: color .125s ease; }
