@@ -581,46 +581,68 @@ address {
 .normalized-content li {
   margin-bottom: .5rem; }
 
+.nav-wrapper {
+  background: #232325;
+  display: block;
+  width: 100%; }
+
+.main-site-nav {
+  background: #09090b;
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem; }
+
 .ui-list {
   list-style-type: none;
+  margin: 0;
   padding-left: 0; }
   .ui-list li {
     display: inline-block; }
-
-.main-site-nav {
-  display: flex; }
 
 .nav-list {
   justify-content: space-between;
   align-items: center;
   display: flex;
   width: 100%;
-  max-width: 96rem;
-  margin-top: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
+  padding: 0 2rem; }
   .nav-list-item {
-    display: block;
     vertical-align: top;
-    font-family: "Mercury SSm A", "Mercury SSm B", cursive, Georgia, Times, "Times New Roman", serif;
-    font-weight: 700; }
+    font-family: "Whitney A", "Whitney B", cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .25ex;
+    margin: 2rem 0;
+    text-align: center;
+    flex: 1 1 4rem; }
+    .nav-list-item:first-of-type {
+      flex: 4 4;
+      text-align: left; }
   .nav-list-link {
-    color: #151515;
+    color: #a4a4a6;
     display: block;
     padding: .6rem 1.2rem;
-    font-style: italic;
     text-decoration: none; }
     .nav-list-link:hover {
-      color: #2772db; }
+      color: #7b88f0; }
     .nav-list-link:active {
-      color: #2056a8; }
+      color: #4a60f6; }
 
 .site-header {
-  font-size: 3.6rem;
-  line-height: 2.4rem;
+  color: #bdbdbf;
+  font-size: 2rem;
   font-style: normal;
-  text-transform: uppercase; }
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color .25s ease, opacity .25s ease; }
+  .site-header span {
+    opacity: 0.7; }
+  .site-header:hover, .site-header:focus {
+    color: white;
+    transition: color .125s ease; }
+    .site-header:hover span, .site-header:focus span {
+      opacity: 1; }
+  .site-header:active {
+    color: #bdbdbf; }
 
 .essay {
   display: flex; }
@@ -647,15 +669,15 @@ article {
     article p a,
     article p a:visited {
       text-decoration-style: wavy;
-      color: #2772db; }
+      color: #0025ff; }
     article p a:focus,
     article p a:hover {
-      color: #508adc; }
+      color: #314cf9; }
     article p a:active {
-      color: #2569ca; }
+      color: #0123ea; }
   article p:first-of-type {
     font-size: 2.4rem;
-    color: #2056a8; }
+    color: #0420c1; }
   article p:last-of-type {
     margin-bottom: 2rem; }
 
@@ -695,9 +717,9 @@ article {
     max-width: 100%; }
   .work-list .work-list-thumb:hover .label,
   .work-list .work-list-thumb:focus .label {
-    background-color: #2772db; }
+    background-color: #0025ff; }
   .work-list .work-list-thumb:active .label {
-    background-color: #225fb9; }
+    background-color: #0322d6; }
 
 body {
   background: white;
