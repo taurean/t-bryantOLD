@@ -1,49 +1,45 @@
 .work-dir {
-  padding: 0rem;
+  padding: 4rem 2rem;
 }
 
 .work-list {
-  background-color: grayscale(white);
   width: 100%;
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem;
+  padding-left: 0;
 
   a {
     text-decoration: none;
   }
-
   &-thumb {
     display: inline-block;
     width: 100%;
-    max-width: 54rem;
+    max-width: 58rem;
     padding: 0;
-    margin-right: -.3rem;
+    margin-right: -4px;
     margin-bottom: 2rem;
 
     .label {
       width: 100%;
       // text-align: right;
-      padding: 1rem 1rem 3rem;
-      background-color: grayscale(black);
+      padding: 1rem;
+      background-color: color(black, 7);
       font-family: $typestack-ui;
       color: color(white);
       margin-bottom: -.1rem;
-      border-radius: 0 0 .2rem .2rem;
+      border-radius: .3rem .3rem 0 0;
       transition: background-color .125s ease;
     }
 
     img {
       width: 100%;
       height: auto;
-      margin: 0;
-      display: block;
-      border-radius: .2rem .2rem 0 0;
+      border-radius: 0 0 .3rem .3rem;
     }
 
-    &:nth-last-of-type(odd) {
-      margin-right: 3.7rem;
-    }
+  &:nth-last-of-type(odd) {
+    margin-right: 3.7rem;
+  }
   }
 
   .work-list-thumb:nth-child(odd):last-child {
@@ -53,7 +49,7 @@
   .work-list-thumb:hover,
   .work-list-thumb:focus {
     .label {
-      background-color: color(brand-color-two);
+      background-color: color(brand-color-one);
     }
   }
 
@@ -64,15 +60,28 @@
   }
 }
 
-// Case Study Breakdown
+// Case Study
 
 .case-study {
-  background-color: grayscale(white);
-  width: 100%;
-  max-width: 120rem;
-  margin: 0 auto;
+
+  &-content {
+    background: grayscale(white);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
   img {
-    max-width: 100%;
+    width: 100%;
   }
+
+
+  &.dark-version {
+    background: grayscale(2);
+
+    .case-study-content {
+      background: grayscale(1);
+    }
+  }
+
 }
