@@ -1,45 +1,49 @@
 .work-dir {
-  padding: 4rem 2rem;
+  padding: 0rem;
 }
 
 .work-list {
+  background-color: grayscale(white);
   width: 100%;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
-  padding-left: 0;
+  padding: 4rem;
 
   a {
     text-decoration: none;
   }
+
   &-thumb {
     display: inline-block;
     width: 100%;
-    max-width: 58rem;
+    max-width: 54rem;
     padding: 0;
-    margin-right: -4px;
+    margin-right: -.3rem;
     margin-bottom: 2rem;
 
     .label {
       width: 100%;
       // text-align: right;
-      padding: 1rem;
-      background-color: color(black, 7);
+      padding: 1rem 1rem 3rem;
+      background-color: grayscale(black);
       font-family: $typestack-ui;
       color: color(white);
       margin-bottom: -.1rem;
-      border-radius: .3rem .3rem 0 0;
+      border-radius: 0 0 .2rem .2rem;
       transition: background-color .125s ease;
     }
 
     img {
       width: 100%;
       height: auto;
-      border-radius: 0 0 .3rem .3rem;
+      margin: 0;
+      display: block;
+      border-radius: .2rem .2rem 0 0;
     }
 
-  &:nth-last-of-type(odd) {
-    margin-right: 3.7rem;
-  }
+    &:nth-last-of-type(odd) {
+      margin-right: 3.7rem;
+    }
   }
 
   .work-list-thumb:nth-child(odd):last-child {
@@ -49,7 +53,7 @@
   .work-list-thumb:hover,
   .work-list-thumb:focus {
     .label {
-      background-color: color(brand-color-one);
+      background-color: color(brand-color-two);
     }
   }
 
@@ -57,5 +61,18 @@
     .label {
       background-color: color(brand-color-one, -2);
     }
+  }
+}
+
+// Case Study Breakdown
+
+.case-study {
+  background-color: grayscale(white);
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
   }
 }
