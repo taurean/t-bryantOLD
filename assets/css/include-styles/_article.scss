@@ -11,15 +11,10 @@
   max-width: 120rem;
 
   h1 {
-    max-width: 92rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  h1 {
     text-transform: uppercase;
     display: block;
     text-align: left;
+    max-width: 92rem;
     width: 100%;
     letter-spacing: .1ex;
     font-size: $font-size-masthead;
