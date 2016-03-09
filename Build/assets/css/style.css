@@ -463,7 +463,7 @@ body {
 body {
   font-family: "Mercury SSm A", "Mercury SSm B", Georgia, Times, "Times New Roman", serif;
   font-size: 1.6rem;
-  line-height: 1.4; }
+  line-height: 1.5; }
 
 body {
   font-family: "Mercury SSm A", "Mercury SSm B", Georgia, Times, "Times New Roman", serif; }
@@ -509,7 +509,7 @@ address {
 .normalized-content h5,
 .normalized-content h6,
 .normalized-content p {
-  line-height: 1.4; }
+  line-height: 1.5; }
 .normalized-content h1 {
   margin: 1rem 0; }
 .normalized-content h2 {
@@ -541,7 +541,7 @@ address {
   padding-left: 0; }
   .normalized-content ul li,
   .normalized-content ol li {
-    line-height: 1.4;
+    line-height: 1.5;
     margin-top: .75rem;
     margin-bottom: .75rem; }
   .normalized-content ul li:after,
@@ -652,7 +652,7 @@ address {
   display: flex;
   font-size: 1.6rem;
   flex-direction: column;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0 auto;
   max-width: 120rem; }
   .article-content h1 {
@@ -667,7 +667,7 @@ address {
   .article-content p {
     display: block;
     font-size: 1.8rem;
-    line-height: 1.4;
+    line-height: 1.5;
     max-width: 64rem;
     margin: 0 auto 2rem auto;
     width: 100%; }
@@ -699,65 +699,91 @@ address {
     color: #808083; }
 
 .work-dir {
-  padding: 4rem 2rem; }
+  padding: 0; }
 
 .work-list {
+  background: white;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 0; }
+  padding: 4rem 4rem 200rem; }
   .work-list a {
     text-decoration: none; }
   .work-list-thumb {
     display: inline-block;
     width: 100%;
-    max-width: 58rem;
+    max-width: 54rem;
     padding: 0;
     margin-right: -4px;
     margin-bottom: 2rem; }
     .work-list-thumb .label {
       width: 100%;
-      padding: 1rem;
-      background-color: #a79f9a;
+      padding: 1rem 1rem 3rem;
+      background-color: #09090b;
       font-family: "Whitney A", "Whitney B", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: white;
-      margin-bottom: -.1rem;
-      border-radius: .3rem .3rem 0 0;
+      border-radius: 0 0 .3rem .3rem;
       transition: background-color .125s ease; }
     .work-list-thumb img {
-      width: 100%;
+      border-radius: .3rem .3rem 0 0;
+      display: block;
       height: auto;
-      border-radius: 0 0 .3rem .3rem; }
+      width: 100%; }
     .work-list-thumb:nth-last-of-type(odd) {
       margin-right: 3.7rem; }
   .work-list .work-list-thumb:nth-child(odd):last-child {
     max-width: 100%; }
   .work-list .work-list-thumb:hover .label,
   .work-list .work-list-thumb:focus .label {
-    background-color: #0025ff; }
+    background-color: #0aa059; }
   .work-list .work-list-thumb:active .label {
-    background-color: #0322d6; }
+    background-color: #0b8451; }
 
 .case-study-content {
   background: white;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; }
-.case-study-masthead {
+  margin: 0 auto;
+  padding-bottom: 10rem; }
+.case-study-masthead, .case-study--fw-image {
   width: 100%; }
-.case-study-heading {
+.case-study-heading, .case-study-subheading {
   text-transform: uppercase;
   display: block;
-  text-align: left;
-  max-width: 92rem;
+  text-align: center;
+  font-weight: 300;
   width: 100%;
   letter-spacing: .1ex;
-  font-size: 8rem;
+  font-size: 4.8rem;
   margin: 6rem auto 3rem; }
+.case-study-subheading {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 3.6rem; }
+.case-study p {
+  max-width: 54rem;
+  font-size: 2rem;
+  font-family: "Whitney A", "Whitney B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 2rem auto;
+  line-height: 1.5;
+  color: #353538; }
+.case-study:after {
+  display: block;
+  height: .1rem;
+  padding-bottom: 2rem; }
+.case-study .seperator-image {
+  display: block;
+  width: 100%;
+  max-width: 8rem;
+  margin: 10rem auto 2rem; }
 .case-study.dark-version {
   background: #353538; }
   .case-study.dark-version .case-study-content {
-    background: #232325; }
+    background: #09090b; }
+  .case-study.dark-version .case-study-heading {
+    color: #e9e9e9; }
+  .case-study.dark-version p {
+    color: white; }
 
 *,
 *:before {
