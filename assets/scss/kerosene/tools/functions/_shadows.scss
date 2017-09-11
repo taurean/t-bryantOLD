@@ -1,0 +1,123 @@
+$shadow-intensity-map: (
+  1: 1,
+  2: 1.7,
+  3: 2.4,
+  4: 3.2,
+  5: 4,
+) !default;
+
+// For calculating alpha in shadows
+@function k-intensity($intensity) { @return map-get($shadow-intensity-map, $intensity); }
+
+// Shadow Function
+@function shadow($z-level, $color:black, $shade:1, $intensity:1) {
+  $box-shadow-property: ();
+
+  @if ($z-level == -9) { $box-shadow-property: inset 0 0 1px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                               inset 0 5px 10px 4px rgba(color($color, $shade), 0.08 * k-intensity($intensity)),
+                                               inset 0 50px 60px 20px rgba(color($color, $shade), 0.15 * k-intensity($intensity));}
+
+  @if ($z-level == -8) { $box-shadow-property: inset 0 0 1px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                               inset 0 5px 5px 4px rgba(color($color, $shade), 0.04 * k-intensity($intensity)),
+                                               inset 0 4px 5px 2px rgba(color($color, $shade), 0.16 * k-intensity($intensity));}
+
+  @if ($z-level == -7) { $box-shadow-property: inset 0 0 2px 0px rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                               inset 0 4px 5px 2px rgba(color($color, $shade), 0.08 * k-intensity($intensity)),
+                                               inset 0 4px 5px 0px rgba(color($color, $shade), 0.17 * k-intensity($intensity));}
+
+  @if ($z-level == -6) { $box-shadow-property: inset 0 0 2px 0px rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                               inset 0 3px 5px 2px rgba(color($color, $shade), 0.04 * k-intensity($intensity)),
+                                               inset 0 3px 5px 0px rgba(color($color, $shade), 0.18 * k-intensity($intensity));}
+
+  @if ($z-level == -5) { $box-shadow-property: inset 0 0 2px 0px rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                               inset 0 3px 4px 2px rgba(color($color, $shade), 0.06 * k-intensity($intensity)),
+                                               inset 0 3px 3px 0px rgba(color($color, $shade), 0.11 * k-intensity($intensity));}
+
+  @if ($z-level == -4) { $box-shadow-property: inset 0 0 2px 0px rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                               inset 0 3px 3px 0 rgba(color($color, $shade), 0.16 * k-intensity($intensity));}
+
+  @if ($z-level == -3) { $box-shadow-property: inset 0 0 1px 1px rgba(color($color, $shade), 0.10 * k-intensity($intensity)),
+                                               inset 0 2px 3px 0 rgba(color($color, $shade), 0.18 * k-intensity($intensity));}
+
+  @if ($z-level == -2) { $box-shadow-property: inset 0 0 1px 1px rgba(color($color, $shade), 0.10 * k-intensity($intensity)),
+                                               inset 0 1px 2px 0 rgba(color($color, $shade), 0.25 * k-intensity($intensity));}
+
+  @if ($z-level == -1) { $box-shadow-property: inset 0 0 1px 1px rgba(color($color, $shade), 0.10 * k-intensity($intensity)),
+                                               inset 0 0 2px 0 rgba(color($color, $shade), 0.25 * k-intensity($intensity));}
+
+  @if ($z-level == 0) { $box-shadow-property: 0 0 0 0 rgba(color($color, $shade), 0.30 * k-intensity($intensity));}
+
+  @if ($z-level == 1) { $box-shadow-property: 0 0 1px 1px rgba(color($color, $shade), 0.05 * k-intensity($intensity)),
+                                              0 0 2px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity));}
+
+  @if ($z-level == 2) { $box-shadow-property: 0 0 0 1px rgba(color($color, $shade), 0.05 * k-intensity($intensity)),
+                                              0 2px 5px 1px rgba(color($color, $shade), 0.18 * k-intensity($intensity));}
+
+  @if ($z-level == 3) { $box-shadow-property: 0 0 1px 0 rgba(color($color, $shade), 0.05 * k-intensity($intensity)),
+                                              0 4px 8px 2px rgba(color($color, $shade), 0.18 * k-intensity($intensity));}
+
+  @if ($z-level == 4) { $box-shadow-property: 0 0 1px 0 rgba(color($color, $shade), 0.21 * k-intensity($intensity)),
+                                              0 8px 10px 3px rgba(color($color, $shade), 0.16 * k-intensity($intensity));}
+
+  @if ($z-level == 5) { $box-shadow-property: 0 0 1px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                              0 12px 20px 0 rgba(color($color, $shade), 0.09 * k-intensity($intensity)),
+                                              0 16px 20px 6px rgba(color($color, $shade), 0.11 * k-intensity($intensity));}
+
+  @if ($z-level == 6) { $box-shadow-property: 0 0 1px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                              0 10px 24px 5px rgba(color($color, $shade), 0.04 * k-intensity($intensity)),
+                                              0 22px 30px 4px rgba(color($color, $shade), 0.18 * k-intensity($intensity));}
+
+  @if ($z-level == 7) { $box-shadow-property: 0 0 1px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                              0 10px 24px 5px rgba(color($color, $shade), 0.04 * k-intensity($intensity)),
+                                              0 25px 40px 20px rgba(color($color, $shade), 0.17 * k-intensity($intensity));}
+
+  @if ($z-level == 8) { $box-shadow-property: 0 0 1px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                              0 15px 20px 10px rgba(color($color, $shade), 0.04 * k-intensity($intensity)),
+                                              0 30px 45px 24px rgba(color($color, $shade), 0.16 * k-intensity($intensity));}
+
+  @if ($z-level == 9) { $box-shadow-property: 0 0 1px 0 rgba(color($color, $shade), 0.20 * k-intensity($intensity)),
+                                              0 25px 30px 10px rgba(color($color, $shade), 0.08 * k-intensity($intensity)),
+                                              0 50px 60px 20px rgba(color($color, $shade), 0.15 * k-intensity($intensity));}
+
+
+
+  @return $box-shadow-property;
+}
+
+
+
+
+
+// DEPRECATED Shadows
+@function light-shadow($level, $color:black) {
+  $box-shadow-props: ();
+    @if ($level == 0) { $box-shadow-props: 0 0 0 0 darken(rgba(color($color),0.00), 50%);}
+    @if ($level == 1) { $box-shadow-props: 0 1px 2px 0 darken(rgba(color($color),0.30), 50%);}
+    @if ($level == 2) { $box-shadow-props: 0 2px 4px 0 darken(rgba(color($color),0.18), 20%);}
+    @if ($level == 3) { $box-shadow-props: 0 4px 4px 0 darken(rgba(color($color),0.18), 20%);}
+    @if ($level == 4) { $box-shadow-props: 0 5px 4px 0 darken(rgba(color($color),0.14), 20%);}
+    @if ($level == 5) { $box-shadow-props: 0 6px 5px 0 darken(rgba(color($color),0.14), 20%);}
+    @if ($level == 6) { $box-shadow-props: 0 6px 4px 0 darken(rgba(color($color),0.07), 20%), 0 8px 6px 0 darken(rgba(color($color),0.12), 20%);}
+    @if ($level == 7) { $box-shadow-props: 0 6px 8px 0 darken(rgba(color($color),0.16), 20%), 0 12px 6px 0 darken(rgba(color($color),0.10), 20%);}
+    @if ($level == 8) { $box-shadow-props: 0 1px 2px 0 darken(rgba(color($color),0.20), 20%), 0 8px 9px 0 darken(rgba(color($color),0.09), 20%), 0 18px 10px 0 darken(rgba(color($color),0.10), 20%);}
+    @if ($level == 9) { $box-shadow-props: 0 1px 3px 0 darken(rgba(color($color),0.20), 20%), 0 8px 5px 0 darken(rgba(color($color),0.06), 20%), 0 24px 18px 0 darken(rgba(color($color),0.10), 20%), 0 30px 25px 3px darken(rgba(color($color),0.10), 20%);}
+
+  @return $box-shadow-props;
+}
+
+
+@function heavy-shadow($level, $color:black) {
+  $box-shadow-props: ();
+    @if ($level == 0) { $box-shadow-props: 0 0 0 0 darken(rgba(color($color),0.00), 50%);}
+    @if ($level == 1) { $box-shadow-props: 0 1px 2px 0 darken(rgba(color($color),0.48), 50%);}
+    @if ($level == 2) { $box-shadow-props: 0 2px 4px 0 darken(rgba(color($color),0.38), 50%);}
+    @if ($level == 3) { $box-shadow-props: 0 4px 4px 0 darken(rgba(color($color),0.48), 50%);}
+    @if ($level == 4) { $box-shadow-props: 0 5px 4px 0 darken(rgba(color($color),0.35), 50%);}
+    @if ($level == 5) { $box-shadow-props: 0 6px 5px 0 darken(rgba(color($color),0.25), 50%);}
+    @if ($level == 6) { $box-shadow-props: 0 6px 4px 0 darken(rgba(color($color),0.18), 50%), 0 8px 6px 0 darken(rgba(color($color),0.22), 50%);}
+    @if ($level == 7) { $box-shadow-props: 0 6px 8px 0 darken(rgba(color($color),0.26), 50%), 0 12px 6px 0 darken(rgba(color($color),0.18), 50%);}
+    @if ($level == 8) { $box-shadow-props: 0 1px 2px 0 darken(rgba(color($color),0.30), 50%), 0 8px 9px 0 darken(rgba(color($color),0.20), 50%), 0 18px 10px 0 darken(rgba(color($color),0.26), 50%);}
+    @if ($level == 9) { $box-shadow-props: 0 1px 3px 0 darken(rgba(color($color),0.30), 50%), 0 8px 5px 0 darken(rgba(color($color),0.15), 50%), 0 24px 18px 0 darken(rgba(color($color),0.20), 50%), 0 30px 25px 3px darken(rgba(color($color),0.30), 50%);}
+
+  @return $box-shadow-props;
+}

@@ -1,0 +1,154 @@
+// Masthead
+@function type-masthead($step, $weight:400, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-heading $fontstack-masthead);
+
+  @return $font-properties;
+}
+
+// Display
+@function type-display($step, $weight:500, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-heading $fontstack-display);
+
+  @return $font-properties;
+}
+
+// Text
+@function type-text($step, $weight:normal, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-base $fontstack-text);
+
+  @return $font-properties;
+}
+
+// Code
+@function type-code($step, $weight:normal, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-base $fontstack-code);
+
+  @return $font-properties;
+}
+
+// UI
+@function type-ui($step, $weight:normal, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-ui $fontstack-ui);
+
+  @return $font-properties;
+}
+
+// Caption
+@function type-caption($step, $weight:normal, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-ui $fontstack-caption);
+
+  @return $font-properties;
+}
+
+// Aside
+@function type-aside($step, $weight:normal, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-base $fontstack-aside);
+
+  @return $font-properties;
+}
+
+// Blockquote
+@function type-blockquote($step, $weight:500, $style:normal) {
+  $base-font-size: (strip-unit($font-scale-base));
+  $font-size-calc: ($base-font-size * pow($font-scale-modifier, (($step - 1))));
+  $font-size: (remPx($font-size-calc));
+
+  $font-properties:($style normal $weight $font-size/$line-height-base $fontstack-blockquote);
+
+  @return $font-properties;
+}
+
+
+
+// ========================================== //
+
+
+// Display
+// @function type-display($step, $weight:500, $style:normal) {
+//   $font-props: ();
+//   @if ($step == masthead) { $font-props: $style normal $weight 12.00rem/#{$line-height-heading} $fontstack-masthead;}
+//         @if ($step == 9)  { $font-props: $style normal $weight 1.60rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 8)  { $font-props: $style normal $weight 1.80rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 7)  { $font-props: $style normal $weight 2.00rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 6)  { $font-props: $style normal $weight 2.40rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 5)  { $font-props: $style normal $weight 2.80rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 4)  { $font-props: $style normal $weight 3.60rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 3)  { $font-props: $style normal $weight 4.00rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 2)  { $font-props: $style normal $weight 6.00rem/#{$line-height-heading} $fontstack-display;}
+//         @if ($step == 1)  { $font-props: $style normal $weight 8.00rem/#{$line-height-heading} $fontstack-display;}
+//
+//   @return $font-props;
+// }
+
+// Monospace
+// @function type-monospace($step, $weight:normal, $style:normal) {
+//   $font-props: ();
+//     @if ($step == 9) { $font-props: $style normal $weight 1.00rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 8) { $font-props: $style normal $weight 1.10rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 7) { $font-props: $style normal $weight 1.20rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 6) { $font-props: $style normal $weight 1.30rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 5) { $font-props: $style normal $weight 1.40rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 4) { $font-props: $style normal $weight 1.60rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 3) { $font-props: $style normal $weight 1.80rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 2) { $font-props: $style normal $weight 2.00rem/#{$line-height-base} $fontstack-monospace;}
+//     @if ($step == 1) { $font-props: $style normal $weight 2.40rem/#{$line-height-base} $fontstack-monospace;}
+//   @return $font-props;
+// }
+
+// UI
+// @function type-ui($step, $weight:normal, $style:normal) {
+//   $font-props: ();
+//     @if ($step == 9) { $font-props: $style normal $weight 1.00rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 8) { $font-props: $style normal $weight 1.10rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 7) { $font-props: $style normal $weight 1.20rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 6) { $font-props: $style normal $weight 1.30rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 5) { $font-props: $style normal $weight 1.40rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 4) { $font-props: $style normal $weight 1.60rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 3) { $font-props: $style normal $weight 1.80rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 2) { $font-props: $style normal $weight 2.00rem/#{$line-height-ui} $fontstack-ui;}
+//     @if ($step == 1) { $font-props: $style normal $weight 2.40rem/#{$line-height-ui} $fontstack-ui;}
+//   @return $font-props;
+// }
+
+// Text
+// @function type-text($step, $weight:normal, $style:normal) {
+//   $font-props: ();
+//     @if ($step == 9) { $font-props: $style normal $weight 1.00rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 8) { $font-props: $style normal $weight 1.10rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 7) { $font-props: $style normal $weight 1.20rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 6) { $font-props: $style normal $weight 1.30rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 5) { $font-props: $style normal $weight 1.40rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 4) { $font-props: $style normal $weight 1.60rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 3) { $font-props: $style normal $weight 1.80rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 2) { $font-props: $style normal $weight 2.00rem/#{$line-height-base} $fontstack-text;}
+//     @if ($step == 1) { $font-props: $style normal $weight 2.40rem/#{$line-height-base} $fontstack-text;}
+//   @return $font-props;
+// }

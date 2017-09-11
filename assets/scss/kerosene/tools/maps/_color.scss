@@ -1,0 +1,239 @@
+$k-hue: (
+    white: $white-base,
+    black: $black-base,
+
+    brand-color-1: $brand-color-1,
+    brand-color-1-alt: $brand-color-1-alt,
+    brand-color-2: $brand-color-2,
+    brand-color-2-alt: $brand-color-2-alt,
+
+    red: $red-base,
+    orange: $orange-base,
+    yellow: $yellow-base,
+    green: $green-base,
+    blue: $blue-base,
+    teal: $teal-base,
+    cyan: $cyan-base,
+    indigo: $indigo-base,
+    violet: $violet-base,
+    purple: $purple-base,
+
+    focus: $focus-base,
+    info: $info-base,
+    alert: $alert-base,
+    warning: $warning-base,
+    danger: $danger-base,
+    success: $success-base,
+) !default;
+
+$k-grayscale: (
+    true-black: $true-black,
+    black: $black-base,
+    -4: #232325,
+    -3: #353538,
+    -2: #49494b,
+    -1: #5d5d60,
+    base: #707072,
+    1: #808083,
+    2: #a4a4a6,
+    3: #bdbdbf,
+    4: #e9e9e9,
+    white: $white-base,
+) !default;
+
+
+$example: turquoise !default;
+
+// Saturn Colors
+$k-hue-base-dark: #000726 !default;
+$k-hue-base-light: #e6f4ff !default;
+
+// Brand Colors
+$brand-color-1:      #9C75F3 !default;
+$brand-color-1-alt:  $brand-color-1 !default;
+
+$brand-color-2:      mediumblue !default;
+$brand-color-2-alt:  $brand-color-2 !default;
+
+// Base Colors
+$red-base:           #dc1414 !default;
+$orange-base:        #f14400 !default;
+$yellow-base:        gold !default;
+$green-base:         #1aaa35 !default;
+$teal-base:          #199199 !default;
+$cyan-base:          #00baba !default;
+$blue-base:          #002eff !default;
+$purple-base:        #8e50f1 !default;
+$indigo-base:        indigo !default;
+$violet-base:        rebeccapurple !default;
+
+// Contextual Base Colors
+$focus-base:         $blue-base !default;
+$info-base:          $blue-base !default;
+$alert-base:         $yellow-base !default;
+$warning-base:       $orange-base !default;
+$danger-base:        $red-base !default;
+$success-base:       $green-base !default;
+
+// Greyscale Base Colors
+$white-base:         #ffffff !default;
+$gray-base:          #B9B9BD !default;
+$black-base:         #151515 !default;
+$true-black:          #000000 !default;
+
+$k-colors: (
+    white: $white-base,
+    black: $black-base,
+
+    brand-color-1: $brand-color-1,
+    brand-color-1-alt: $brand-color-1-alt,
+    brand-color-2: $brand-color-2,
+    brand-color-2-alt: $brand-color-2-alt,
+
+    red: $red-base,
+    orange: $orange-base,
+    yellow: $yellow-base,
+    green: $green-base,
+    blue: $blue-base,
+    teal: $teal-base,
+    cyan: $cyan-base,
+    indigo: $indigo-base,
+    violet: $violet-base,
+    purple: $purple-base,
+
+    focus: $focus-base,
+    info: $info-base,
+    alert: $alert-base,
+    warning: $warning-base,
+    danger: $danger-base,
+    success: $success-base,
+
+    AliceBlue: AliceBlue,
+    AntiqueWhite: AntiqueWhite,
+    Aquamarine: Aquamarine,
+    Azure: Azure,
+    Beige: Beige,
+    Bisque: Bisque,
+    BlanchedAlmond: BlanchedAlmond,
+    BlueViolet: BlueViolet,
+    Brown: Brown,
+    BurlyWood: BurlyWood,
+    CadetBlue: CadetBlue,
+    Chartreuse: Chartreuse,
+    Chocolate: Chocolate,
+    Coral: Coral,
+    CornflowerBlue: CornflowerBlue,
+    Cornsilk: Cornsilk,
+    Crimson: Crimson,
+    DarkBlue: DarkBlue,
+    DarkCyan: DarkCyan,
+    DarkGoldenRod: DarkGoldenRod,
+    DarkGray: DarkGray,
+    DarkGreen: DarkGreen,
+    DarkKhaki: DarkKhaki,
+    DarkMagenta: DarkMagenta,
+    DarkOliveGreen: DarkOliveGreen,
+    Darkorange: Darkorange,
+    DarkOrchid: DarkOrchid,
+    DarkRed: DarkRed,
+    DarkSalmon: DarkSalmon,
+    DarkSeaGreen: DarkSeaGreen,
+    DarkSlateBlue: DarkSlateBlue,
+    DarkSlateGray: DarkSlateGray,
+    DarkTurquoise: DarkTurquoise,
+    DarkViolet: DarkViolet,
+    DeepPink: DeepPink,
+    DeepSkyBlue: DeepSkyBlue,
+    DimGray: DimGray,
+    DodgerBlue: DodgerBlue,
+    FireBrick: FireBrick,
+    FloralWhite: FloralWhite,
+    ForestGreen: ForestGreen,
+    Gainsboro: Gainsboro,
+    GhostWhite: GhostWhite,
+    Gold: Gold,
+    GoldenRod: GoldenRod,
+    Gray: Gray,
+    GreenYellow: GreenYellow,
+    HoneyDew: HoneyDew,
+    HotPink: HotPink,
+    IndianRed: IndianRed,
+    Ivory: Ivory,
+    Khaki: Khaki,
+    Lavender: Lavender,
+    LavenderBlush: LavenderBlush,
+    LawnGreen: LawnGreen,
+    LemonChiffon: LemonChiffon,
+    LightBlue: LightBlue,
+    LightCoral: LightCoral,
+    LightCyan: LightCyan,
+    LightGoldenRodYellow: LightGoldenRodYellow,
+    LightGray: LightGray,
+    LightGreen: LightGreen,
+    LightPink: LightPink,
+    LightSalmon: LightSalmon,
+    LightSeaGreen: LightSeaGreen,
+    LightSkyBlue: LightSkyBlue,
+    LightSlateGray: LightSlateGray,
+    LightSteelBlue: LightSteelBlue,
+    LightYellow: LightYellow,
+    Lime: Lime,
+    LimeGreen: LimeGreen,
+    Linen: Linen,
+    Magenta: Magenta,
+    Maroon: Maroon,
+    MediumAquaMarine: MediumAquaMarine,
+    MediumBlue: MediumBlue,
+    MediumOrchid: MediumOrchid,
+    MediumPurple: MediumPurple,
+    MediumSeaGreen: MediumSeaGreen,
+    MediumSlateBlue: MediumSlateBlue,
+    MediumSpringGreen: MediumSpringGreen,
+    MediumTurquoise: MediumTurquoise,
+    MediumVioletRed: MediumVioletRed,
+    MidnightBlue: MidnightBlue,
+    MintCream: MintCream,
+    MistyRose: MistyRose,
+    Moccasin: Moccasin,
+    NavajoWhite: NavajoWhite,
+    Navy: Navy,
+    OldLace: OldLace,
+    Olive: Olive,
+    OliveDrab: OliveDrab,
+    OrangeRed: OrangeRed,
+    Orchid: Orchid,
+    PaleGoldenRod: PaleGoldenRod,
+    PaleGreen: PaleGreen,
+    PaleTurquoise: PaleTurquoise,
+    PaleVioletRed: PaleVioletRed,
+    PapayaWhip: PapayaWhip,
+    PeachPuff: PeachPuff,
+    Peru: Peru,
+    Pink: Pink,
+    Plum: Plum,
+    PowderBlue: PowderBlue,
+    RosyBrown: RosyBrown,
+    RoyalBlue: RoyalBlue,
+    SaddleBrown: SaddleBrown,
+    Salmon: Salmon,
+    SandyBrown: SandyBrown,
+    SeaGreen: SeaGreen,
+    SeaShell: SeaShell,
+    Sienna: Sienna,
+    Silver: Silver,
+    SkyBlue: SkyBlue,
+    SlateBlue: SlateBlue,
+    SlateGray: SlateGray,
+    Snow: Snow,
+    SpringGreen: SpringGreen,
+    SteelBlue: SteelBlue,
+    Tan: Tan,
+    Thistle: Thistle,
+    Tomato: Tomato,
+    Turquoise: Turquoise,
+    Wheat: Wheat,
+    WhiteSmoke: WhiteSmoke,
+    YellowGreen: YellowGreen,
+
+    example: $example
+);

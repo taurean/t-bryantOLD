@@ -1,0 +1,36 @@
+// Kerosene Colors
+$k-hue-base-dark:  #000726 !default;
+$k-hue-base-light: #e6f4ff !default;
+
+// Brand Colors
+$brand-color-1:      #9C75F3 !default;
+$brand-color-1-alt:  $brand-color-1 !default;
+
+$brand-color-2:      mediumblue !default;
+$brand-color-2-alt:  $brand-color-2 !default;
+
+// Base Colors
+$red-base:           #dc1414 !default;
+$orange-base:        #f14400 !default;
+$yellow-base:        gold !default;
+$green-base:         #1aaa35 !default;
+$teal-base:          #199199 !default;
+$cyan-base:          #00baba !default;
+$blue-base:          #002eff !default;
+$purple-base:        #8e50f1 !default;
+$indigo-base:        indigo !default;
+$violet-base:        rebeccapurple !default;
+
+// Contextual Base Colors
+$focus-base:         $blue-base !default;
+$info-base:          $blue-base !default;
+$alert-base:         $yellow-base !default;
+$warning-base:       $orange-base !default;
+$danger-base:        $red-base !default;
+$success-base:       $green-base !default;
+
+// Greyscale Base Colors
+$white-base:         #ffffff !default;
+$gray-base:          #B9B9BD !default;
+$black-base:         #151515 !default;
+$true-black:         #000000 !default;

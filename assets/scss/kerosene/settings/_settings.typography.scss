@@ -1,0 +1,41 @@
+// // Type Scale
+// $rem-base:                    10px !default;
+// $font-size-base:            1.6rem !default;
+// $font-size-h1:              2.8rem !default;
+// $font-size-h2:              2.2rem !default;
+// $font-size-h3:              1.8rem !default;
+// $font-size-h4:              1.4rem !default;
+// $font-size-h5:              1.2rem !default;
+// $font-size-h6:              1.0rem !default;
+// $font-size-masthead:        5.0rem !default;
+
+// Line Height
+$line-height-base:          1.6 !default;
+$line-height-heading:       1.2 !default;
+$line-height-ui:            1 !default;
+
+// Font Weights
+$font-light:                300 !default;
+$font-normal:               400 !default;
+$font-medium:               500 !default;
+$font-bold:                 600 !default;
+
+// Fontstacks
+$fontstack-monospace:       "Andale Mono",AndaleMono,monospace !default;
+$fontstack-sans-serif:     sans-serif !default;
+$fontstack-serif:          serif !default;
+
+$fontstack-display:         -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$fontstack-masthead:        $fontstack-display !default;
+$fontstack-text:            $fontstack-display !default;
+$fontstack-code:            $fontstack-monospace !default;
+$fontstack-ui:              $fontstack-display !default;
+
+$fontstack-caption:         $fontstack-display !default;
+$fontstack-aside:           $fontstack-display !default;
+$fontstack-blockquote:      $fontstack-display !default;
+
+// Font Scale Controls
+
+$font-scale-modifier: 1.125 !default;
+$font-scale-base: 16px !default;

@@ -1,0 +1,197 @@
+/*
+Strip Unit
+
+input: attribute: strip-unit([number-with-unit]);
+output: attribute: [unitless-number];
+
+*/
+/*
+REM Calculator
+*/
+/*
+Power Function
+
+via - https://www.bhalash.com/archives/13544805657
+
+*/
+.disable-text-select {
+  /* disabled text select */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+    not supported by any browser */ }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html,
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100% !important;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: normal normal 500 1.42383rem/1.2 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0; }
+
+dfn,
+var,
+cite,
+address {
+  font-style: normal; }
+
+:not(#sr-only-specificity-fix).u-sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: .1rem;
+  margin: -.1rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: .1rem;
+  /* TODO: add state that only makes visible on focus */ }
+  :not(#sr-only-specificity-fix).u-sr-only-focusable:active,
+  :not(#sr-only-specificity-fix).u-sr-only .u-sr-only-focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+[disabled],
+[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  text-decoration: none;
+  pointer-events: none;
+  /* disabled text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+       supported by Chrome and Opera */ }
+
+[hidden] {
+  display: none; }
+
+[aria-hidden="true"] {
+  visibility: hidden; }
+
+.page-wrap {
+  display: flex;
+  max-width: 72.5rem;
+  width: 100%;
+  padding: 3.75rem 1.25rem;
+  margin: 0 auto; }
+  .page-wrap aside {
+    max-width: 25rem;
+    margin-right: 1.25rem; }
+  .page-wrap main {
+    max-width: 50rem;
+    padding-top: 0; }
+
+.master-aside {
+  min-width: 18.75rem; }
+  .master-aside h1 {
+    display: block;
+    font: normal normal 600 1.42383rem/1.2 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+  .master-aside h1 a {
+    text-decoration: none;
+    color: dodgerblue; }
+  .master-aside h2 {
+    font: normal normal 500 1.125rem/1.6 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    margin-bottom: 0.625rem; }
+
+.master-aside nav ul {
+  padding-left: 0;
+  list-style-type: none; }
+.master-aside nav ul li {
+  margin-bottom: 0.75rem;
+  font: normal normal normal 1.125rem/1 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.master-aside nav li a {
+  text-decoration: none;
+  color: dodgerblue; }
+
+.intro {
+  font: normal normal 600 1.60181rem/1.6 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0; }
+
+.intro a {
+  color: #5c11d4;
+  border-radius: 0.1875rem;
+  transition: background 150ms, transform 50ms;
+  border: 1px solid rgba(142, 80, 241, 0);
+  text-decoration: none;
+  background: rgba(142, 80, 241, 0.05);
+  padding: 0 0.375rem; }
+
+.intro a:hover,
+.intro a:focus {
+  background: #ddcbfb;
+  transform: translateY(-1px); }
+
+.intro a:focus {
+  outline: none;
+  border-color: #8e50f1; }
+
+.intro a:active {
+  background: #ddcbfb;
+  transform: translateY(1px); }
+
+.case-study-header {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 12.5rem; }
+  .case-study-header h1 {
+    font: normal normal bold 1.80203rem/1.2 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .case-study-header h2 {
+    font: normal normal 500 1rem/1.2 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .case-study-header .meta-data {
+    margin-right: 1.25rem; }
+  .case-study-header p {
+    font: normal normal normal 1.125rem/1.6 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 0; }
+
+.images {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.images img {
+  width: 100%;
+  max-width: 50rem;
+  margin-bottom: 1.25rem; }
+
+/*# sourceMappingURL=style.css.map */
