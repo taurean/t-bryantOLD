@@ -1,11 +1,95 @@
 @import 'kerosene/kerosene';
 
+
+html {
+  height: 100%;
+  font-size: 10px;
+  padding: 0;
+}
+
+@keyframes northern {
+  0% {
+    transform: translate(5%, -2%);
+  }
+
+  25% {
+    transform: translate(10%, 7%);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: translate(7%, -2%);
+  }
+
+  85% {
+    transform: translate(6%, 3%) rotate(12deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  height: 100%;
+  justify-content: center;
+  // padding: 4rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  width: 120vw;
+  height: 120vh;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  z-index: 1;
+}
+
+.auroral-northern {
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  overflow: hidden;
+  height: 200%;
+  animation-name: northern;
+  animation-duration: 16s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: linear-gradient(10deg, #CB60E9 20%, #dff7fa 40%, white 70%);
+}
+
 .page-wrap {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.content-wrap {
+  overflow: scroll;
   display: flex;
   max-width: remPx(1160);
   width: 100%;
+  position: relative;
   padding: remPx(60) remPx(20);
   margin: 0 auto;
+  z-index: 1000;
 
   aside {
     max-width: remPx(400);
@@ -20,7 +104,7 @@
 
 .master-aside {
   min-width: remPx(300);
-  
+
   h1 {
     display: block;
     font: type-display(4, 600);
@@ -56,6 +140,11 @@
     text-decoration: none;
     color: color(dodgerblue);
   }
+
+  li a:hover,
+  li a:focus {
+    text-decoration: underline;
+  }
 }
 
 .intro {
@@ -70,7 +159,7 @@
     border: 1px solid color(purple, 0, 0.0);
     text-decoration: none;
     background: color(purple, 0, 0.05);
-    padding: 0 remPx(6);
+    padding: remPx(0) remPx(6);
 }
 
 .intro a:hover,
