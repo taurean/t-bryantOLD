@@ -1,0 +1,25 @@
+.landing-page .page-wrapper {
+  display: flex;
+  max-width: remPx(740);
+  margin: remPx(20) auto;
+}
+
+.master-header h1 {
+  font: type-ui(4);
+}
+
+.master-aside {
+  min-width: remPx(160);
+}
+
+.nav-list li {
+  display: block;
+}
+
+main.master-content {
+  padding: 0 remPx(20);
+}
+
+.master-footer {
+  margin-top: remPx(40);
+}

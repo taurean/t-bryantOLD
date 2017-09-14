@@ -1,3 +1,12 @@
+$fontstack-sans-serif: 'National', sans-serif;
+$fontstack-serif: 'TiemposText', serif;
 
 
-$fontstack-display: "National", serif;
+$fontstack-display: 'TiemposHeadline', $fontstack-display;
+$fontstack-masthead: $fontstack-display;
+
+$fontstack-text: 'TiemposText', $fontstack-text;
+$fontstack-ui: 'National', $fontstack-ui;
+$fontstack-caption: 'National', $fontstack-caption;
+$fontstack-aside: 'National', $fontstack-aside;
+$fontstack-blockquote: 'TiemposHeadline', $fontstack-blockquote;

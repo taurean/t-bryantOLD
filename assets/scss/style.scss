@@ -1,8 +1,12 @@
-@import 'webfonts/webfonts.css';
 @import 'kerosene/kerosene';
 @import 'kerosene-overrides';
 @import 'global';
-@import 'large';
+
+
+@media all and (min-width: 740px) {
+  @import 'large';
+
+}
 
 
 
