@@ -200,7 +200,7 @@ section.intro {
     margin: 1.25rem auto; }
 
   .master-header h1 {
-    font: normal normal normal 1.42383rem/1 "National", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal normal 400 1.42383rem/1.2 "TiemposHeadline", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 0.375rem; }
 
   .master-aside {
