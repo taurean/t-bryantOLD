@@ -114,7 +114,7 @@ body {
   padding: 1.25rem; }
 
 .master-header h1 {
-  font: normal normal normal 1.60181rem/1 "National", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 1.60181rem/1.2 "TiemposHeadline", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
   margin-left: -0.3125rem; }
