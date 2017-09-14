@@ -175,9 +175,11 @@ section.intro {
     border-radius: 0.3125rem; }
 
 .master-footer {
+  display: block; }
+
+.metal-hand {
   display: block;
-  margin: 2.5rem 0;
-  padding-bottom: 2.5rem; }
+  margin: 2.5rem 0; }
 
 @media all and (min-width: 740px) {
   .landing-page .page-wrapper {
