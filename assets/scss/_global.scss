@@ -102,5 +102,7 @@ section.intro {
 
 
 .master-footer {
-  margin-top: remPx(40);
+  display: block;
+  margin: remPx(40) 0;
+  padding-bottom: remPx(40);
 }

@@ -175,7 +175,9 @@ section.intro {
     border-radius: 0.3125rem; }
 
 .master-footer {
-  margin-top: 2.5rem; }
+  display: block;
+  margin: 2.5rem 0;
+  padding-bottom: 2.5rem; }
 
 @media all and (min-width: 740px) {
   .landing-page .page-wrapper {
