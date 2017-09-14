@@ -170,6 +170,9 @@ section.intro {
     margin: 0;
     padding-top: 0;
     margin-bottom: 1.25rem; }
+  section.intro .cta {
+    font: normal normal normal 1.125rem/1 "National", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6; }
   section.intro a {
     text-decoration: none;
     color: seagreen; }
