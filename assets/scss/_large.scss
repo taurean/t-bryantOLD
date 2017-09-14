@@ -1,11 +1,14 @@
 .landing-page .page-wrapper {
   display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
   max-width: remPx(740);
   margin: remPx(20) auto;
 }
 
 .master-header h1 {
   font: type-ui(4);
+  margin-top: remPx(6);
 }
 
 .master-aside {
@@ -19,3 +22,8 @@
 main.master-content {
   padding: 0 remPx(20);
 }
+
+// section.intro span.split {
+//   display: inline;
+//   margin-bottom: 0;
+// }
