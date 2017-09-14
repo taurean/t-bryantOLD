@@ -179,7 +179,7 @@ section.intro {
 
 .metal-hand {
   display: block;
-  margin: 2.5rem 0; }
+  padding: 2.5rem 0; }
 
 @media all and (min-width: 740px) {
   .landing-page .page-wrapper {
