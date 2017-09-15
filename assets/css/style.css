@@ -192,12 +192,11 @@ section.intro {
   margin: 1.25rem 0; }
 
 /* Case Studies */
-.case-studies .master-aside {
+.case-studies {
   padding: 1.25rem; }
 
 .case-study {
   display: block;
-  padding: 1.25rem;
   width: 100%; }
 
 .images,
@@ -224,6 +223,10 @@ picture img {
     display: block; }
 
   main.master-content {
-    padding: 0 1.25rem; } }
+    padding: 0 1.25rem; }
+
+  .case-studies .page-wrapper {
+    max-width: 46.25rem;
+    margin: 1.25rem auto; } }
 
 /*# sourceMappingURL=style.css.map */

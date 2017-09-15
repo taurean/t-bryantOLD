@@ -27,3 +27,8 @@ main.master-content {
 //   display: inline;
 //   margin-bottom: 0;
 // }
+
+.case-studies .page-wrapper {
+  max-width: remPx(740);
+  margin: remPx(20) auto;
+}
