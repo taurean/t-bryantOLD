@@ -199,6 +199,26 @@ section.intro {
   display: block;
   width: 100%; }
 
+.case-study h1 {
+  font: normal normal 500 1.42383rem/1.2 "TiemposHeadline", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 2.5rem;
+  margin-bottom: 0.625rem; }
+
+.case-study h2 {
+  font: normal normal normal 1.125rem/1 "National", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1.25rem; }
+
+.case-study h2 a {
+  color: rgba(21, 21, 21, 0.5);
+  text-decoration: none; }
+  .case-study h2 a:hover, .case-study h2 a:focus {
+    color: seagreen;
+    text-decoration: underline; }
+  .case-study h2 a:focus {
+    outline: none;
+    background: rgba(46, 139, 87, 0.1);
+    border-radius: 0.1875rem; }
+
 .images,
 picture,
 picture img {

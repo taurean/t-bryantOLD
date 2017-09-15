@@ -137,6 +137,34 @@ section.intro {
   width: 100%;
 }
 
+.case-study h1 {
+  font: type-display(4, 500);
+  margin-top: remPx(40);
+  margin-bottom: remPx(10);
+}
+
+.case-study h2 {
+  font: type-ui(2);
+  margin-bottom: remPx(20);
+}
+
+.case-study h2 a {
+  color: color(black, 0, 0.5);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: color(seagreen);
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+    background: color(seagreen, 0, 0.1);
+    border-radius: remPx(3);
+  }
+}
+
 .images,
 picture,
 picture img {
