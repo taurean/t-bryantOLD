@@ -29,6 +29,17 @@ main.master-content {
 // }
 
 .case-studies .page-wrapper {
-  max-width: remPx(740);
+  max-width: remPx(1040);
+  display: flex;
+  align-content: flex-start;
   margin: remPx(20) auto;
+
+  .case-study {
+    padding: 0 remPx(40);
+    margin-top: 0;
+  }
+
+  .case-study h1 {
+    margin-top: remPx(10);
+  }
 }

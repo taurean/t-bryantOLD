@@ -219,6 +219,10 @@ section.intro {
     background: rgba(46, 139, 87, 0.1);
     border-radius: 0.1875rem; }
 
+.case-study-header {
+  margin-bottom: 3.75rem;
+  display: block; }
+
 .images,
 picture,
 picture img {
@@ -246,7 +250,14 @@ picture img {
     padding: 0 1.25rem; }
 
   .case-studies .page-wrapper {
-    max-width: 46.25rem;
-    margin: 1.25rem auto; } }
+    max-width: 65rem;
+    display: flex;
+    align-content: flex-start;
+    margin: 1.25rem auto; }
+    .case-studies .page-wrapper .case-study {
+      padding: 0 2.5rem;
+      margin-top: 0; }
+    .case-studies .page-wrapper .case-study h1 {
+      margin-top: 0.625rem; } }
 
 /*# sourceMappingURL=style.css.map */
