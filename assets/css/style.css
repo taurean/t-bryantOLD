@@ -197,7 +197,8 @@ section.intro {
 
 .case-study {
   display: block;
-  padding: 1.25rem; }
+  padding: 1.25rem;
+  width: 100%; }
 
 .images,
 picture,
