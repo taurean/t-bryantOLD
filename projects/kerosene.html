@@ -8,20 +8,20 @@
   <!-- <link href="#" rel="shortcut icon"> -->
   <!-- <link href="#" rel="apple-touch-icon"> -->
   <title>Kerosene</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/webfonts/webfonts.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
 </head>
 
-<body>
-<div class="page-wrap">
-<div class="content-wrap">
+<body class="case-studies">
+  <div class="page-wrapper">
   <aside class="master-aside">
-    <header>
-      <h1><a href="../">T. Bryant</a></h1>
+    <header class="master-header">
+      <h1><a href="/">T. Bryant</a></h1>
     </header>
-    <nav>
+    <nav class="master-nav">
       <h2>Projects</h2>
-      <ul>
+      <ul class="nav-list">
         <li><a href="work-bench.html">Work—Bench</a></li>
         <li><a href="voyager.html">Voyager</a></li>
         <li><a href="kerosene.html">Kerosene</a></li>
@@ -33,7 +33,7 @@
     </nav>
   </aside>
 
-  <main>
+  <main class="case-study">
     <heading class="case-study-header">
       <div class="meta-data">
         <h1>Kerosene</h1>
@@ -42,8 +42,23 @@
       <p>On the various projects I’ve worked on over the past couple years, I began to notice myself tediously crafting the same visual elements (such as shadows) and applying the same techniques for tasks in Sass. That experience inspired me to craft a suite of SCSS tools to help expedite future work. Kerosene provides just the right amount of handholding without painting me into a corner or making it difficult to override things – that’s what makes it great, in my opinion. Eventually, Kerosene will be used to fuel a small set of components I will use for future Voyager projects under the name of Saturn V. Together with Kerosene fueling Saturn V (pun very much intended), they’ll form Apollo.</p>
     </heading>
     <div class="images">
-      <img src="../assets/img/portfolio/kerosene/masthead.png">
-      <img src="../assets/img/portfolio/kerosene/webpage.png">
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/kerosene--masthead.jpg 1x, ../assets/img/kerosene--masthead@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/kerosene--masthead@2x.jpg" alt="Masthead">
+        <noscript><img src="../assets/img/kerosene--masthead@2x.jpg" alt="Mastheaad"></noscript>
+      </picture>
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/kerosene--website.jpg 1x, ../assets/img/kerosene--website@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/kerosene--website@2x.jpg" alt="Website for Kerosene">
+        <noscript><img src="../assets/img/kerosene--website@2x.jpg" alt="Website for Kerosene"></noscript>
+      </picture>
+
     </div>
   </main>
   <footer>

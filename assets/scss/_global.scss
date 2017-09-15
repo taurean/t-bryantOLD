@@ -123,3 +123,22 @@ section.intro {
   display: block;
   margin: remPx(20) 0;
 }
+
+
+/* Case Studies */
+
+.case-studies .master-aside {
+  padding: remPx(20);
+}
+
+
+.case-study {
+  display: block;
+  padding: remPx(20);
+}
+
+.images,
+picture,
+picture img {
+  width: 100%;
+}

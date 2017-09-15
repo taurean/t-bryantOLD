@@ -8,20 +8,20 @@
   <!-- <link href="#" rel="shortcut icon"> -->
   <!-- <link href="#" rel="apple-touch-icon"> -->
   <title>MacOS Darkmode</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/webfonts/webfonts.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
 </head>
 
-<body>
-<div class="page-wrap">
-<div class="content-wrap">
+<body class="case-studies">
+  <div class="page-wrapper">
   <aside class="master-aside">
-    <header>
-      <h1><a href="../">T. Bryant</a></h1>
+    <header class="master-header">
+      <h1><a href="/">T. Bryant</a></h1>
     </header>
-    <nav>
+    <nav class="master-nav">
       <h2>Projects</h2>
-      <ul>
+      <ul class="nav-list">
         <li><a href="work-bench.html">Work—Bench</a></li>
         <li><a href="voyager.html">Voyager</a></li>
         <li><a href="kerosene.html">Kerosene</a></li>
@@ -33,7 +33,7 @@
     </nav>
   </aside>
 
-  <main>
+  <main class="case-study">
     <heading class="case-study-header">
       <div class="meta-data">
         <h1>Kerosene</h1>
@@ -42,8 +42,55 @@
       <p>MacOS Darkmode was a personal experiment in practicing visual design so that I could learn the interface design tool Figma. At the time, there was speculation that Apple might release a more advanced dark-mode to merge with night-shift. I wanted to explore what that might look like with a couple of Apple’s stock apps.</p>
     </heading>
     <div class="images">
-      <img src="../assets/img/portfolio/voyager/masthead.png">
-      <img src="../assets/img/portfolio/voyager/webpage.png">
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/darkmode--masthead.jpg 1x, ../assets/img/darkmode--masthead@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/darkmode--masthead@2x.jpg" alt="Masthead - MacOS Sierra Dark Mode">
+        <noscript><img src="../assets/img/darkmode--masthead@2x.jpg" alt="Masthead - MacOS Sierra Dark Mode"></noscript>
+      </picture>
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/darkmode--finder.jpg 1x, ../assets/img/darkmode--finder@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/darkmode--finder@2x.jpg" alt="Dark Mode Finder mockup">
+        <noscript><img src="../assets/img/darkmode--finder@2x.jpg" alt="Dark Mode Finder mockup"></noscript>
+      </picture>
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/darkmode--calendar.jpg 1x, ../assets/img/darkmode--calendar@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/darkmode--calendar@2x.jpg" alt="Dark Mode Finder mockup">
+        <noscript><img src="../assets/img/darkmode--calendar@2x.jpg" alt="Dark Mode Finder mockup"></noscript>
+      </picture>
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/darkmode--deskMockup.jpg 1x, ../assets/img/darkmode--deskMockup@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/darkmode--deskMockup@2x.jpg" alt="Desktop Mockup">
+        <noscript><img src="../assets/img/darkmode--deskMockup@2x.jpg" alt="Desktop Mockup"></noscript>
+      </picture>
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/darkmode--finderDesktop.jpg 1x, ../assets/img/darkmode--finderDesktop@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/darkmode--finderDesktop@2x.jpg" alt="Finder Mockup on Mac OS Desktop">
+        <noscript><img src="../assets/img/darkmode--finderDesktop@2x.jpg" alt="Finder Mockup on Mac OS Desktop"></noscript>
+      </picture>
+
+      <picture class="picture-set">
+        <!-- [if IE 9]><video style="display: none;"><![endif] -->
+        <source srcset="../assets/img/darkmode--calendarDesktop.jpg 1x, ../assets/img/darkmode--calendarDesktop@2x.jpg 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="../assets/img/darkmode--calendarDesktop@2x.jpg" alt="Calendar Mockup on Mac OS Desktop">
+        <noscript><img src="../assets/img/darkmode--calendarDesktop@2x.jpg" alt="Calendar Mockup on Mac OS Desktop"></noscript>
+      </picture>
+
     </div>
   </main>
   <footer>
