@@ -233,7 +233,7 @@ picture img {
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
-    max-width: 46.25rem;
+    max-width: 65rem;
     margin: 1.25rem auto; }
 
   .master-header h1 {
@@ -249,6 +249,10 @@ picture img {
   main.master-content {
     padding: 0 1.25rem; }
 
+  .intro p {
+    font: normal normal 400 2.2807rem/1.2 "TiemposHeadline", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6; }
+
   .case-studies .page-wrapper {
     max-width: 65rem;
     display: flex;
@@ -258,6 +262,16 @@ picture img {
       padding: 0 2.5rem;
       margin-top: 0; }
     .case-studies .page-wrapper .case-study h1 {
+      margin-top: 0.625rem; }
+
+  .case-study-header {
+    display: flex; }
+    .case-study-header .meta-data {
+      min-width: 16.25rem;
+      padding-right: 0.625rem; }
+    .case-study-header .meta-data h1 {
+      font: normal normal 500 1.80203rem/1.2 "TiemposHeadline", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .case-study-header p {
       margin-top: 0.625rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
   display: flex;
   align-content: flex-start;
   align-items: flex-start;
-  max-width: remPx(740);
+  max-width: remPx(1040);
   margin: remPx(20) auto;
 }
 
@@ -23,6 +23,11 @@ main.master-content {
   padding: 0 remPx(20);
 }
 
+.intro p {
+  font: type-masthead(8);
+  line-height: $line-height-base;
+}
+
 // section.intro span.split {
 //   display: inline;
 //   margin-bottom: 0;
@@ -40,6 +45,23 @@ main.master-content {
   }
 
   .case-study h1 {
+    margin-top: remPx(10);
+  }
+}
+
+.case-study-header {
+  display: flex;
+
+  & .meta-data {
+    min-width: remPx(260);
+    padding-right: remPx(10);
+  }
+
+  & .meta-data h1 {
+    font: type-display(6);
+  }
+
+  p {
     margin-top: remPx(10);
   }
 }
