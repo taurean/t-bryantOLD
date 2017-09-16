@@ -66,6 +66,8 @@ body {
     text-decoration: none;
   }
 
+  // &#187;
+
   li a:hover,
   li a:focus {
     color: color(seagreen);
@@ -76,6 +78,16 @@ body {
     background: color(seagreen, 0, 0.1);
     outline: none;
     border-radius: remPx(3);
+  }
+
+  li a.is-current {
+    text-decoration: underline;
+
+    &:before {
+      display: inline-block;
+      content: '\261B';
+      padding-right: remPx(10);
+    }
   }
 }
 

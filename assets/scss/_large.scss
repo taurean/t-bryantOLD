@@ -19,6 +19,19 @@
   display: block;
 }
 
+.nav-list li a.is-current {
+
+  &:after {
+    display: inline-block;
+    content: '\261B';
+    padding-left: remPx(10);
+  }
+
+  &:before {
+    display: none;
+  }
+}
+
 main.master-content {
   padding: 0 remPx(20);
 }

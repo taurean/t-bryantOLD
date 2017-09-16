@@ -160,6 +160,12 @@ body {
     background: rgba(46, 139, 87, 0.1);
     outline: none;
     border-radius: 0.1875rem; }
+  .nav-list li a.is-current {
+    text-decoration: underline; }
+    .nav-list li a.is-current:before {
+      display: inline-block;
+      content: '\261B';
+      padding-right: 0.625rem; }
 
 section.intro {
   font: normal normal 500 1.42383rem/1.2 "TiemposHeadline", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -245,6 +251,13 @@ picture img {
 
   .nav-list li {
     display: block; }
+
+  .nav-list li a.is-current:after {
+    display: inline-block;
+    content: '\261B';
+    padding-left: 0.625rem; }
+  .nav-list li a.is-current:before {
+    display: none; }
 
   main.master-content {
     padding: 0 1.25rem; }
