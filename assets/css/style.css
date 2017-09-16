@@ -249,6 +249,9 @@ picture img {
   .master-aside {
     min-width: 10rem; }
 
+  .nav-list {
+    margin-bottom: 2.5rem; }
+
   .nav-list li {
     display: block; }
 
