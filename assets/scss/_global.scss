@@ -188,13 +188,23 @@ section.intro {
 
 .hiring-cta {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: remPx(10);
+  right: remPx(10);
+  bottom: remPx(10);
+  border-radius: remPx(5);
   text-align: center;
   z-index: 999999999;
-  background: color(purple, 5);
+  background: color(purple, 5, 0.98);
+  margin: 0;
 }
+
+@supports (-webkit-backdrop-filter: blur()) {
+  .hiring-cta {
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    background: color(purple, 5, 0.8);
+  }
+}
+
 
 .hiring-cta a {
   text-align: center;
@@ -203,6 +213,15 @@ section.intro {
   padding: remPx(6) remPx(12);
   border-radius: remPx(5);
   text-decoration: none;
+}
+
+.hiring-cta a:hover,
+.hiring-cta a:focus {
+  text-decoration: underline;
+}
+
+.hiring cta:focus {
+  outline: none;
 }
 
 .case-study-header {

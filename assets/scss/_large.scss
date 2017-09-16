@@ -36,6 +36,29 @@
   }
 }
 
+
+.hiring-cta {
+  position: inherit;
+  text-align: left;
+  z-index: 999999999;
+  margin: 0;
+  background: none;
+}
+
+.hiring-cta a {
+  text-align: center;
+  display: inline-block;
+  background: color(purple, 6);
+  padding: remPx(6) remPx(12);
+  border-radius: remPx(5);
+  text-decoration: none;
+}
+
+.hiring-cta a:hover,
+.hiring-cta a:focus {
+  text-decoration: underline;
+}
+
 main.master-content {
   padding: 0 remPx(20);
 }
