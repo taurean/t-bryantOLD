@@ -163,6 +163,15 @@ section.intro {
 .case-study h2 a {
   color: color(black, 0, 0.5);
   text-decoration: none;
+  padding: remPx(2) remPx(6);
+  margin-left: remPx(-6);
+
+  &:after {
+    display: inline-block;
+    content: '\2192';
+    font-weight: normal;
+    padding-left: remPx(6);
+  }
 
   &:hover,
   &:focus {

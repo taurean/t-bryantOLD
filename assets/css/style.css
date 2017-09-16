@@ -216,7 +216,14 @@ section.intro {
 
 .case-study h2 a {
   color: rgba(21, 21, 21, 0.5);
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 0.125rem 0.375rem;
+  margin-left: -0.375rem; }
+  .case-study h2 a:after {
+    display: inline-block;
+    content: '\2192';
+    font-weight: normal;
+    padding-left: 0.375rem; }
   .case-study h2 a:hover, .case-study h2 a:focus {
     color: seagreen;
     text-decoration: underline; }
