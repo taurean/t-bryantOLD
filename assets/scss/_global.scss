@@ -186,6 +186,25 @@ section.intro {
   }
 }
 
+.hiring-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 999999999;
+  background: color(purple, 6);
+}
+
+.hiring-cta a {
+  text-align: center;
+  display: inline-block;
+  // background: color(purple, 6);
+  padding: remPx(6) remPx(12);
+  border-radius: remPx(5);
+  text-decoration: none;
+}
+
 .case-study-header {
   margin-bottom: remPx(60);
   display: block;
