@@ -232,6 +232,19 @@ section.intro {
     background: rgba(46, 139, 87, 0.1);
     border-radius: 0.1875rem; }
 
+.case-study-header p a {
+  text-decoration: none;
+  color: seagreen; }
+
+.case-study-header p a:hover,
+.case-study-header p a:focus {
+  text-decoration: underline; }
+
+.case-study-header p a:focus {
+  background: rgba(46, 139, 87, 0.1);
+  outline: none;
+  border-radius: 0.3125rem; }
+
 .hiring-cta {
   position: fixed;
   left: 0.625rem;
@@ -252,7 +265,8 @@ section.intro {
   display: inline-block;
   padding: 0.375rem 0.75rem;
   border-radius: 0.3125rem;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3c1778; }
 
 .hiring-cta a:hover,
 .hiring-cta a:focus {

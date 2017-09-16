@@ -186,6 +186,23 @@ section.intro {
   }
 }
 
+.case-study-header p a {
+  text-decoration: none;
+  color: color(seagreen);
+}
+
+.case-study-header p a:hover,
+.case-study-header p a:focus {
+  text-decoration: underline;
+}
+
+.case-study-header p a:focus {
+  background: color(seagreen, 0, 0.1);
+  outline: none;
+  border-radius: remPx(5);
+}
+
+
 .hiring-cta {
   position: fixed;
   left: remPx(10);
@@ -213,6 +230,7 @@ section.intro {
   padding: remPx(6) remPx(12);
   border-radius: remPx(5);
   text-decoration: none;
+  color: color(purple, -5);
 }
 
 .hiring-cta a:hover,
