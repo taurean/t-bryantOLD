@@ -316,7 +316,7 @@ picture img {
     position: inherit;
     text-align: left;
     z-index: 999999999;
-    margin: 0;
+    margin: 0 0 20px 0;
     background: none; }
 
   .hiring-cta a {
